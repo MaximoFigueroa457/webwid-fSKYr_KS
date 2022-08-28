@@ -1,0 +1,35 @@
+{% extends "/home/maxor/.local/share/virtualenvs/webwid-fSKYr_KS/webwid/libreria/templates/paginas/page.html" %}
+
+{% block titulo %} Plantasssss {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-primary" href="{% url 'crear' %}" role="button">Agregar nueva planta</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Plantas</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Genetica</th>
+                    <th>Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Skittles</td>
+                    <td>Imagen.jpg</td>
+                    <td><a name="" id="" class="btn btn-primary" href="{% url 'editar' %}" role="button">EDITAR</a>-  <a name="" id="" class="btn btn-primary" href="#" role="button">BORRAR</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
